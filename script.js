@@ -216,8 +216,25 @@
 //     document.querySelector('.name').style.color = 'red';
 // }
 
-function toggleDarkMode() {
-    document.querySelector('body').classList.toggle("dark-theme")
+// function toggleDarkMode() {
+//     document.querySelector('body').classList.toggle("dark-theme")
+// }
+function getVideo(status) {
+    return new Promise((resolve, reject) => {
+        if (status === "VIP") {
+            resolve("show video")
+        }
+        else if (status === "FREE") {
+            resolve("show trailer")
+        }
+        else {
+            reject("no video")
+        }
+    })
 }
 
+async function main() {
+    console.log(await getVideo("REE"))
+}
 
+main();
