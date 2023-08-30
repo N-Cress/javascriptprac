@@ -219,22 +219,37 @@
 // function toggleDarkMode() {
 //     document.querySelector('body').classList.toggle("dark-theme")
 // }
-function getVideo(status) {
-    return new Promise((resolve, reject) => {
-        if (status === "VIP") {
-            resolve("show video")
-        }
-        else if (status === "FREE") {
-            resolve("show trailer")
-        }
-        else {
-            reject("no video")
-        }
-    })
+// function getVideo(status) {
+//     return new Promise((resolve, reject) => {
+//         if (status === "VIP") {
+//             resolve("show video")
+//         }
+//         else if (status === "FREE") {
+//             resolve("show trailer")
+//         }
+//         else {
+//             reject("no video")
+//         }
+//     })
+// }
+
+// async function main() {
+//     const status = await getSubscriptionStatus()
+//     console.log(await getVideo("REE"))
+//     try {
+
+//     }
+//     catch (e) {
+//         console.log(e)
+        
+//     }
+// }
+
+// main();
+
+function addTwo(numOne, numTwo) {
+    let sumNum = numOne + numTwo;
+    return sumNum;
 }
 
-async function main() {
-    console.log(await getVideo("REE"))
-}
-
-main();
+console.log(addTwo(4, 5))
