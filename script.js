@@ -247,9 +247,144 @@
 
 // main();
 
-function addTwo(numOne, numTwo) {
-    let sumNum = numOne + numTwo;
-    return sumNum;
+// function addTwo(numOne, numTwo) {
+//     let sumNum = numOne + numTwo;
+//     return sumNum;
+// }
+
+// console.log(addTwo(4, 5));
+
+
+// function boolOne(num) {
+//     return num % 2 === 0 ? 1 : -1; 
+// }
+
+// function checkUser(isLogged, isSubscribed) {
+//     return isLogged && isSubscribed ? true : false;
+// }
+
+// console.log(checkUser(false, true));
+
+// function getMax(arr) {
+//     let currMax = arr[0];
+//     for(let i = 0; i < arr.length; i++) {
+//         if (currMax < arr[i]) {
+//             currMax = arr[i];
+//         }
+//     }
+//     return currMax;
+// }
+
+
+// console.log(getMax([-199, -200, -201]))
+
+// function reverseStr(string) {
+//     let newWord = ""
+//     for(let i = 1; i < string.length + 1; i++) {
+//         newWord += string[string.length - i];
+//     }
+//     return newWord;
+// }
+
+// console.log(reverseStr("badrats"));
+
+// function reverseWithArry(string) {
+//     let newWord = string.split('').reverse().join('');
+//     return newWord;
+// }
+
+// console.log(reverseWithArry("garbage day"))
+
+// function arrTo0(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         arr[i] = 0
+//     }
+//     return arr;
+// }
+
+// console.log(arrTo0([1, 2, "hello", NaN, 10, undefined]))
+
+// function arrTo0Fill(arr) {
+//     return new Array(arr.length).fill(0)
+// }
+
+// console.log(arrTo0Fill([0, 4, "hello", NaN]))
+
+// function arr0Map(arr) {
+//     let newArr = arr.map(elem => 0)
+//     return newArr;
+// }
+
+// console.log(arr0Map([0, 5, 4, "hello"]))
+
+
+// function removeApp(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if (arr[i] === "Apple" || arr[i] === "apple") {
+//             delete arr[i];
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(removeApp(["Apple", "Banana", "apple", "oragne"]))
+
+// function removeAppPush(arr) {
+//     let noApples = []
+//     for(let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== "Apple") {
+//             if (arr[i] !== "apple") {
+//                 noApples.push(arr[i]);
+//             }
+//         }
+//     }
+//     return noApples;
+// }
+
+// console.log(removeAppPush(["hello", "apple", "Apple"]))
+
+// function removeAppFilter(arr) {
+//     return arr.filter(elem => elem !== "Apple")
+// }
+
+// console.log(removeAppFilter(["Apple", "apple", "orange"]));
+
+
+// function removeFalsy(arr) {
+//     let newArr = [];
+//     for(i = 0; i < arr.length; i++) {
+//         if (arr[i]) {
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// console.log(removeFalsy([NaN, "hello", 5, 7, undefined, false, ]))
+
+// function removeFilterFalsy(arr) {
+//     return arr.filter(elem => elem)
+// }
+
+// console.log(removeFilterFalsy([NaN, 5, "hello", undefined, "rawr", 7, null]))
+
+// function trueBooly(arr) {
+//     let newArr = [];
+//     for(i = 0; i < arr.length; i++) {
+//         if (arr[i]) {
+//             newArr.push(true);
+//         }
+//         else {
+//             newArr.push(false);
+//         }
+//     }
+//     return newArr;
+// }
+
+// console.log(flipBooly([true, false, NaN, 5, 7, "undefined", undefined]))
+
+function trueToTrue(arr) {
+    return arr.map(elem => !!elem)
 }
 
-console.log(addTwo(4, 5))
+console.log(trueToTrue([true, false, NaN, 5, 7, "undefined", undefined]));
