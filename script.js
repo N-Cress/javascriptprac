@@ -383,8 +383,123 @@
 
 // console.log(flipBooly([true, false, NaN, 5, 7, "undefined", undefined]))
 
-function trueToTrue(arr) {
-    return arr.map(elem => !!elem)
-}
+// function trueToTrue(arr) {
+//     return arr.map(elem => !!elem)
+// }
 
-console.log(trueToTrue([true, false, NaN, 5, 7, "undefined", undefined]));
+// console.log(trueToTrue([true, false, NaN, 5, 7, "undefined", undefined]));
+
+// function numToStars(num) {
+//     let wholeNum = Math.floor(num);
+//     let newStr = ""
+//     for (let i = 0; i < wholeNum ; i++) {
+//         if (i === 0){
+//             newStr += "*"
+//         }
+//         else {
+//             newStr += " *"
+//         }
+//     }
+//     if (num % 1 !== 0) {
+//         if (num > 0.5 ) {
+//             newStr += " .";
+//         }
+//         else {
+//             newStr += "."
+//         }
+//     }
+//     return newStr;
+// }
+// // !Number.isInteger(rating)
+
+// console.log(numToStars(4.5))
+
+
+// function sortLowToHigh(arr) {
+//     return arr.sort((a, b) => a.price-b.price);
+// }
+
+// console.log(sortLowToHigh([
+//     {id: 1, price: 50},
+//     {id: 2, price: 40},
+//     {id: 3, price: 1000},
+//     {id: 4, price: -30},
+// ]))
+
+// function sortHighToLowObject(arr) {
+//     return arr.sort((a, b) => a.price-b.price);
+// }
+
+// console.log(sortHighToLowObject({id: 1, price: 50},
+//     {id: 2, price: 40},
+//     ));
+
+// async function findUserPosts(uid) {
+//     const result = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const promise = await result.json();
+//     const userPosts = promise.filter(element => element.userId === uid);
+//     console.log(userPosts)
+// }
+
+// findUserPosts(4);
+
+// async function userFilter(uid) {
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const result = await promise.json();
+//     const userPosts = result.filter(elem => elem.userId === uid);
+//     console.log(userPosts);
+// }
+
+// userFilter(4);
+
+
+// async function sixToDos() {
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const result = await promise.json();
+//     let response = []
+//     let i = 0;
+//     let j = 0;
+//     while (i < 5) {
+//         if (result[j].completed === false) {
+//             response.push(result[j])
+//             i++;
+//             j++;
+//         }
+//         else {
+//             j++;
+//         }
+//     }
+//     console.log(response);
+// }
+
+// sixToDos();
+
+
+// async function sixToDos() {
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const result = await promise.json();
+//     let i = 0;
+//     const response = result.filter(elem => {
+//         while (i < 6) {
+//             if (elem.completed === false) {
+//                 i++;
+//                 return true;
+//             }
+//             else {
+//                 return false;
+//             }
+//         }
+//     })
+//     console.log(response);
+// }
+
+// async function sixToDos() {
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const result = await promise.json();
+//     let i = 0;
+//     const response = result.filter(elem => !elem.completed).slice(0, 6)
+//     console.log(response);
+// }
+
+
+// sixToDos()
